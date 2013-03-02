@@ -67,15 +67,6 @@ unsetopt ALL_EXPORT
 
 autoload -U compinit
 compinit
-bindkey "^?" backward-delete-char
-bindkey '^[OH' beginning-of-line
-bindkey '^[OF' end-of-line
-bindkey '^[[5~' up-line-or-history
-bindkey '^[[6~' down-line-or-history
-bindkey "^r" history-incremental-search-backward
-bindkey ' ' magic-space    # also do history expansion on space
-bindkey '^I' complete-word # complete on tab, leave expansion to _expand
-bindkey -e
 
 # Alias definitions.
 # ~/MyScripts/my_aliases, instead of adding them here directly.
@@ -106,3 +97,8 @@ fi
 if [ -f ~/MyScripts/my_zstyles ]; then
   . ~/MyScripts/my_zstyles
 fi
+
+# Shell bindkeys 
+# ~/MyScripts/my_bindkeys, instead of adding them here directly.
+if [ -f ~/MyScripts/my_bindkeys ]; then
+  . ~/MyScripts/my_bindkeys
