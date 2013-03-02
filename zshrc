@@ -102,3 +102,4 @@ fi
 # ~/MyScripts/my_bindkeys, instead of adding them here directly.
 if [ -f ~/MyScripts/my_bindkeys ]; then
   . ~/MyScripts/my_bindkeys
+fi
