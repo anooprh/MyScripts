@@ -53,6 +53,7 @@ alias mvim='nocorrect mvim'
 alias ll="ls -al"
 alias ls="ls -G"
 alias p='cd ~/Projects/MOTECH/'
+# alias ^L=clear
 
 # Aliases Copied from Somewhere .Not exactly sure what they do :P
 
