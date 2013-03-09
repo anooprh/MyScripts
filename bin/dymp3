@@ -1,0 +1,5 @@
+x="tmp"
+youtube-dl --format=18 "$1" --output="$x"
+ffmpeg -i "$x" -acodec libmp3lame -ac 2 -ab 128k -vn -y "$2"
+rm $x
+
