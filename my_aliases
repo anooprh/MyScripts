@@ -63,3 +63,13 @@ alias f=finger
 alias offlineimap-tty='offlineimap -u TTY.TTYUI'
 alias hnb-partecs='hnb $HOME/partecs/partecs-hnb.xml'
 alias rest2html-css='rst2html --embed-stylesheet --stylesheet-path=/usr/share/python-docutils/s5_html/themes/default/print. css'
+
+#Postgres Jobs Alias
+#
+alias cronjob_psql='psql -U postgres -d motechquartz -c "SELECT qrtz_triggers.trigger_name, cron_expression, to_timestamp(next_fire_time/1000) as next, to_timestamp(prev_fire_time/1000) as prev, to_timestamp(start_time/1000) as start
+ FROM qrtz_cron_triggers, qrtz_triggers WHERE qrtz_triggers.trigger_name = qrtz_cron_triggers.trigger_name order by qrtz_triggers.trigger_name;"'
+
+alias repeatjob_psql='psql -U postgres -d motechquartz -c "SELECT qrtz_triggers.trigger_name, times_triggered, to_timestamp(next_fire_time/1000) as next, to_timestamp(prev_fire_time/1000) as prev, to_timestamp(start_time/1000) as start
+  FROM qrtz_simple_triggers, qrtz_triggers WHERE qrtz_triggers.trigger_name = qrtz_simple_triggers.trigger_name order by qrtz_triggers.trigger_name;"'
+
+alias jobsp='cronjob_psql;repeatjob_psql'
