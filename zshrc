@@ -76,3 +76,4 @@ fi
 if [ -f ~/MyScripts/z_opts_mods ]; then
   . ~/MyScripts/z_opts_mods
 fi
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

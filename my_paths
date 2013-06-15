@@ -12,4 +12,8 @@ export PATH=$PATH:~/Softwares/sox-14.4.0
 
 export PATH=$PATH:~/.ec2/bin
 
+export PATH=$PATH:/usr/local/share/npm/bin
+
+export PATH=$PATH:~/Softwares/gradle-1.6/bin
+
 export PATH=$PATH:~/MyScripts/bin
