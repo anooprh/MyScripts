@@ -49,7 +49,6 @@ set history=700
 " Enable filetype plugins
 filetype off
 call pathogen#runtime_append_all_bundles()
-filetype plugin indent oniletype plugin on
 
 " Set to auto read when a file is changed from the outside
 set autoread
