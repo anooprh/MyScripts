@@ -16,6 +16,7 @@ alias st='stree'
 alias gg='git-gui'
 alias gl="git log --oneline -10"
 alias glcid="git log --oneline -1 | awk '{print $1}' | pbcopy"
+alias gpup='git pull && git submodule init && git submodule update && git submodule status'
 # Tomcat Aliases
 
 alias tc='$CATALINA_HOME/bin/catalina.sh'
