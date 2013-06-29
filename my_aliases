@@ -14,6 +14,7 @@ alias gd='git diff --color'
 alias st='stree'
 alias gg="/usr/local/git/libexec/git-core/git-gui"
 alias gl="git log --oneline -10"
+alias gpup='git pull && git submodule init && git submodule update && git submodule status'
 # Tomcat Aliases
 
 alias tc='$CATALINA_HOME/bin/catalina.sh'
