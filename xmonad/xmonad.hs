@@ -3,6 +3,7 @@
 -- Anoop
 
 import XMonad
+import XMonad.Hooks.ManageDocks
 import XMonad.Layout.WindowNavigation
 
 import qualified Data.Map as M
@@ -13,7 +14,9 @@ main = xmonad $ defaultConfig
     , normalBorderColor = "#FFFFFF"   
     , focusedBorderColor= "#FF0000"    
     , focusFollowsMouse = True
-    --, keys              = myKeyConfig  --Custom Key Config defined below
+    --, layoutHook=avoidStruts
+    --, manageHook=manageHook defaultConfig <+> manageDocks
+      --, keys              = myKeyConfig  --Custom Key Config defined below
     }
 
 -- My Custom Key Configurations
