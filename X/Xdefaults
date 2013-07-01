@@ -1,0 +1,45 @@
+URxvt*transparent: true
+URxvt*tintColor: Black
+
+!#URxvt*shading: 40
+
+URxvt*cursorBlink: true
+URxvt*saveLines: 12000
+URxvt*foreground: White
+URxvt*background: Black
+
+!#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+!#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+
+!#URxvt*font: xft:Liberation Mono:pixelsize=19:antialias=true:hinting=true
+!#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+!#URxvt*font: xft:terminus:pixelsize=15
+!#URxvt*boldFont: xft:terminus:bold:pixelsize=15
+!#URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
+!#URxvt*boldFont:-*-courier-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
+!#URxvt*color4: Black
+!#URxvt*color12: Black
+
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*scrollstyle: rxvt
+URxvt.perl-lib: /home/anoop/MyScripts/urxvt-perls
+URxvt.perl-ext-common: default,url-select,keyboard-select,clipboard,tabbed,matcher
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.C-S-c: perl:clipboard:copy
+URxvt.keysym.C-v: perl:clipboard:paste
+URxvt.keysym.C-S-v: perl:clipboard:paste_escaped
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 15
+URxvt.tabbed.tab-bg: 0
+
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1

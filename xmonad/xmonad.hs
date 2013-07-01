@@ -14,6 +14,7 @@ main = xmonad $ defaultConfig
     , normalBorderColor = "#FFFFFF"   
     , focusedBorderColor= "#FF0000"    
     , focusFollowsMouse = True
+    , terminal            = "urxvt"
     --, layoutHook=avoidStruts
     --, manageHook=manageHook defaultConfig <+> manageDocks
       --, keys              = myKeyConfig  --Custom Key Config defined below
