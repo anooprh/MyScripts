@@ -4,7 +4,11 @@
 
 import XMonad
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.DynamicLog
 import XMonad.Layout.WindowNavigation
+import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.EZConfig(additionalKeys)
+import System.IO
 
 import qualified Data.Map as M
 
@@ -14,9 +18,9 @@ main = xmonad $ defaultConfig
     , normalBorderColor = "#FFFFFF"   
     , focusedBorderColor= "#FF0000"    
     , focusFollowsMouse = True
-    , terminal            = "urxvt"
-    --, layoutHook=avoidStruts
-    --, manageHook=manageHook defaultConfig <+> manageDocks
+    , terminal          = "urxvt"
+    , manageHook	= manageDocks <+> manageHook defaultConfig
+    , layoutHook	= avoidStruts $ layoutHook defaultConfig
       --, keys              = myKeyConfig  --Custom Key Config defined below
     }
 

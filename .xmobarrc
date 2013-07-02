@@ -1,8 +1,8 @@
 Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
        , bgColor = "black"
        , fgColor = "grey"
-       , position = Bottom
-       , lowerOnStart = False
+       , position = Top
+--       , lowerOnStart = False
        , commands = [ Run Weather "VOBG" ["-t","<station>: <tempC>C","-L","21","-H","33","--normal","green","--high","red","--low","lightblue"] 600
                     , Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
                     , Run Network "ppp0" ["-L","0","-H","32","--normal","green","--high","red"] 10
