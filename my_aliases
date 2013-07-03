@@ -12,7 +12,7 @@ alias gc='git commit -m'
 alias gk='gitk'
 alias gd='git diff --color'
 alias st='stree'
-alias gg="/usr/local/git/libexec/git-core/git-gui"
+alias gg='git gui'
 alias gl="git log --oneline -10"
 alias gpup='git pull && git submodule init && git submodule update && git submodule status'
 # Tomcat Aliases
