@@ -1,0 +1,5 @@
+[[ -f ~/.Xresources  ]] && xrdb -merge ~/.Xresources
+[[ -f ~/.Xdefaults  ]] && xrdb -merge ~/.Xdefaults
+
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
