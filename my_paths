@@ -16,3 +16,5 @@ export PATH=$PATH:~/MyScripts/bin
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:$GRADLE_HOME/bin
+export PATH=$PATH:~/Softwares/mongoose
+
