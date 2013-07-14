@@ -1,5 +1,7 @@
 [[ -f ~/.Xresources  ]] && xrdb -merge ~/.Xresources
 [[ -f ~/.Xdefaults  ]] && xrdb -merge ~/.Xdefaults
 
+gnome-panel &
+
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
