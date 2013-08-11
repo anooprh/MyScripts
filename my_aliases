@@ -44,6 +44,16 @@ alias mcisjrw='cd .. && mcisjr'
 alias mcidjrw='cd .. && mcidjr'
 alias mcisdjrw='cd .. && mcisdjr'
 
+
+#Gradle Aliases
+alias gr='gradlew'
+alias grsb='gradlew startBanner'
+alias grr='gradlew run'
+alias grb='gradlew build'
+alias grft='gradlew runFt'
+alias grrs='gradlew runStub'
+
+
 # VLC Aliases
 
 alias vlc='vlc -I rc'
