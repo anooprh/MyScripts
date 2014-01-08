@@ -14,12 +14,12 @@ import qualified Data.Map as M
 
 main = xmonad $ defaultConfig
     { borderWidth       = 5
-    , modMask           = mod4Mask     --Super / Windows :( Key
+    --, modMask           = mod4Mask     --Super / Windows :( Key
     , normalBorderColor = "#FFFFFF"   
     , focusedBorderColor= "#FF0000"    
     , focusFollowsMouse = True
-    --, terminal          = "gnome-terminal"
-    , terminal          = "urxvt"
+    , terminal          = "gnome-terminal"
+    --, terminal          = "urxvt"
     , manageHook	= manageDocks <+> manageHook defaultConfig
     , layoutHook	= avoidStruts $ layoutHook defaultConfig
       --, keys              = myKeyConfig  --Custom Key Config defined below
