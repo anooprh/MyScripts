@@ -13,6 +13,7 @@ PATH="/usr/local/bin:/usr/local/sbin/:/bin:/sbin:/usr/bin:/usr/sbin:$PATH"
 #export PATH=$PATH:~/.ec2/bin
 
 export PATH=$PATH:~/MyScripts/bin
+export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:$GRADLE_HOME/bin

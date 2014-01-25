@@ -56,8 +56,9 @@ alias mvim='nocorrect mvim'
 
 alias ll="ls -al"
 alias ls="ls -G"
-alias p='cd ~/Projects/MOTECH/'
+alias p='cd ~/Workspace'
 alias xcopy="xclip -selection c"
+alias matlab="/usr/local/MATLAB/R2013a/bin/matlab"
 # alias ^L=clear
 
 # Mongoose Web Server Alias
