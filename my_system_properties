@@ -1,6 +1,6 @@
 # System Specific Properties
 
-#export CATALINA_HOME='/usr/local/apache-tomcat-7.0.33'
+export CATALINA_HOME='/home/anoop/Softwares/apache-tomcat-8.0.5'
 
 #export JASPER_HOME='/Users/anooprh/Softwares/jasperreports-server-cp-5.0.0-bin'
 
@@ -15,3 +15,5 @@ export JAVA_HOME='/home/anoop/Softwares/jdk1.7.0_51'
 export GRADLE_HOME='/home/anoop/Softwares/gradle-1.6'
 
 export IP_RESOLVER_URL=http://ipecho.net/plain
+export HBASE_HOME='~/Softwares/hbase-0.94.17'
+export GOPATH='/home/anoop/Workspace/GO'
