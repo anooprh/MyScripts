@@ -57,6 +57,7 @@ alias mvim='nocorrect mvim'
 alias ll="ls -alth --color"
 alias ls="ls -G"
 alias p='cd ~/Workspace'
+alias b='cd ~/Books'
 alias xcopy="xclip -selection c"
 alias matlab="/usr/local/MATLAB/R2013a/bin/matlab -nosplash&"
 # alias ^L=clear
